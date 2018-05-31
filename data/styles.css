@@ -13,8 +13,6 @@
 }
 .box_3 {
 }
-.ellipse {
-}
 ._图片 {
 }
 .button {
@@ -63,19 +61,16 @@
 ._文本段落 {
   text-align:left;
 }
-.arrow {
+.text_field {
+  color:#000000;
+  text-align:left;
 }
 ._流程形状 {
 }
-._连接线 {
-  font-family:'Arial Normal', 'Arial';
-  font-weight:400;
-  font-style:normal;
-  font-size:13px;
-  color:#333333;
-  text-align:center;
-  line-height:normal;
+.table_cell {
 }
-.marker {
-  color:#FFFFFF;
+.ellipse {
+}
+.link_button {
+  color:#169BD5;
 }
