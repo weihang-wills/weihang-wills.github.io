@@ -3,13 +3,32 @@
 <head>
     <meta charset="utf-8" />
     <title>我的网站</title>
+    <style>
+        .button1 {
+            font-size:22px;
+            color:#1f4c71;
+            font-family:FZLanTingHei-DB-GBK;
+            text-align:center;
+            border: 4px dashed #8AC007;
+            border-radius:20px;
+            background-color: antiquewhite;
+            padding: 20px;
+            margin:30px;
+            
+            
+        }
+    </style>
     
 </head>
 <body>
-    <h1 style="text-align:center;">伟航的博客</h1>
-    <br />
-    <br />
-    <button type="submit" onclick="jump1()">对联</button>
+    <div style="text-align:center">
+        <h1 style="margin-top:60px;margin-bottom:40px;color:#2c6f7e">伟航的项目</h1>
+
+
+        <div style="float:inherit">
+            <button class="button1" onclick="jump1()">1、红包对联</button>
+        </div>
+    </div>
     <script language="javascript">
         function jump1() {
             window.open('web1/index.html');
