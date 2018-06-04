@@ -13,7 +13,8 @@
             border-radius:20px;
             background-color: antiquewhite;
             padding: 20px;
-            margin:30px;
+            margin-top:30px;
+			margin-right:20px
             
             
         }
@@ -23,12 +24,14 @@
 <body>
 
     <div style="text-align:center">
-        <h1 style="margin-top:60px;margin-bottom:40px;color:#2c6f7e">伟航的项目</h1>
+        <h1 style="margin-top:60px;margin-bottom:40px;font-family:FZLanTingHei-DB-GBK;color:#2c6f7e">伟航的项目</h1>
 
 
-        <div style="float:inherit">
-            <button class="button1" onclick="jump1()">1、红包对联</button>
-        </div>
+        <div>
+            <button class="button1" onclick="jump1()">红包对联</button>
+			</div>
+       
+		<button class="button1" onclick="jump2()">游戏剧情</button>
     </div>
 
   
@@ -37,6 +40,10 @@
             window.open('web1/index.html');
            
         }
+		function jump2(){
+			window.location.href="web2/index.html";
+			
+		}
     </script>
 
 </body>
