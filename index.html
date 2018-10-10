@@ -5,19 +5,22 @@
     <title>我的网站</title>
     <style>
         .button1 {
-            font-size:22px;
-            color:#1f4c71;
-            font-family:FZLanTingHei-DB-GBK;
-            text-align:center;
+            font-size: 22px;
+            color: #1f4c71;
+            font-family: FZLanTingHei-DB-GBK;
+            text-align: center;
             border: 4px dashed #8AC007;
-            border-radius:20px;
+            border-radius: 20px;
             background-color: antiquewhite;
             padding: 20px;
-            margin-top:30px;
-			margin-right:20px
-            
+            margin-top: 30px;
+            margin-right: 20px;            
             
         }
+        .button1:hover{
+            background-color:coral;
+        }
+        
     </style>
     
 </head>
@@ -31,11 +34,13 @@
             <button class="button1" onclick="jump('web1/index.html')">红包对联</button>
             <button class="button1" onclick="jump('web2/index.html')">游戏剧情</button>
         </div>
-        
+
 
         <button class="button1" onclick="jump('virtuallover/index.html')">虚拟恋人</button>
         <button class="button1" onclick="jump('virtuallover-wx/index.html')">虚拟恋人公众号</button>
         <br>
+        
+        <button id="11" class="button1" onmouseover="this.innerHTML='点我'" onmouseout="this.innerHTML='哄睡闹钟'">哄睡闹钟</button>
 
         <button class="button1" onclick="jump('heart/index.html')">心流</button>
     </div>
@@ -44,6 +49,10 @@
 
 
     <script language="javascript">
+
+
+        document.getElementById("11").onclick = function () { jump('clock/index.html') };
+                
         function jump1() {
             window.open('web1/index.html');
 
