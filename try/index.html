@@ -1,0 +1,42 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+</head>
+
+<body>
+  <div id="div1" style='text-align: center;'>
+    <button onclick="add()" >增加</button>
+  </div>
+
+
+  <script>
+    function add() {
+
+      var div1 = document.getElementById('div1');
+      // 这种方法单纯加字符串
+      // var add='<p>增加的内容</p>'
+      // div1.append(add);
+
+      // 方法1
+      // var add=document.createElement('div');
+      // add.innerHTML='<p>增加的内容</p>';
+      // div1.appendChild(add.firstChild);
+
+      // 方法2
+      var add = '<p>增加的内容</p>'
+      let frag = document.createRange().createContextualFragment(add);
+      div1.append(frag);
+
+
+
+    }
+  </script>
+
+</body>
+
+</html>
