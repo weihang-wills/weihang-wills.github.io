@@ -1,0 +1,88 @@
+intents:
+1.1需求
+  - run_cmd
+  - run_in  # 室内跑（客户端）
+  - run_out  # 室外跑（客户端）
+新增的意图为以下四个：
+  - walk_cmd # 健走（客户端）
+  - onfeet_cmd # 徒步（客户端）
+  - ride_cmd # 骑行（客户端）
+  - fitness_cmd # 健身（客户端）
+修改的意图为以下三个：
+  - run_pause_cmd修改为pause_cmd  # 暂停（客户端）
+  - run_continue_cmd修改为continue_cmd  # 继续/恢复（客户端）
+  - run_end_cmd修改为end_cmd  # 结束（客户端）
+
+  - run_distance_history  # 做判断，距离数据（后台）
+  - run_speed_history  # 做判断，速度数据（后台）
+  - run_time_history  # 做判断，时长数据（后台）
+  - run_frequency_total  # 跑步次数
+  - run_steps  # 做判断，跑步步数（后台）
+  - walking_data  # 健走步数
+  - run_distance_gap_now  # 与设定目标距离差值（后台）
+  - run_time_gap_now  # 与设定目标时间差值（后台）
+1.2需求
+  - open_my_events（打开我的赛事）
+  - open_reward_race（打开天天赏金赛）
+  - open_habit_race（打开习惯养成赛）
+  - open_walking_race（打开健走闯关赛）
+  - open_yinhua_race（打开印花赛）
+  - open_teamPK_race（打开团队PK赛）
+  - open_circle_challenge_race（打开团子挑战赛）
+  - open_network_marathon（打开网络马拉松赛）
+  - open_health_examination（打开AI体检）
+  - open_my_wallet（打开我的钱包）
+  - play_music（播放音乐）
+  - synchronous_data（同步数据）
+
+  - events_network_marathon（网络马拉松赛事信息）
+  - events_reward_race（天天赏金赛赛事信息）
+  - events_habit_race（习惯养成赛赛事信息）
+  - events_walking_race（健走闯关赛赛事信息）
+  - events_yinhua_race（印花赛赛事信息）
+
+新增，2019.08.29
+关节：cf_body_parts
+
+疾病：cf_disease_id
+高血压
+高血糖
+高血脂
+骨质疏松
+肩周炎
+鼠标手
+扁平足
+腰肌劳损
+腰椎间盘突出
+   - diet_plan(减肥塑形)
+   - enhance_physical_fitness(提高身体素质)
+   - run_stretch_before(跑前热身)
+   - run_stretch_after(跑后拉伸)
+
+
+新增，2019.09.11
+ request_intro:悦动圈简介(文案需你补充)
+ request_ecology_layout：悦动圈布局(文案需你补充)
+ request_achievement：悦动圈成就(文案需你补充)
+ request_user_cnt：悦动圈用户数(文案需你补充)
+"lame":"对受伤脚的踝关节进行加压、冰敷、抬高以及休息，控制踝关节的红、肿、胀等症状。"
+"heat_stroke":"及时通风、补水、快速降温。"
+ "run_knowledge":"跑步技巧，跑步作用，跑步的损伤及预防哪个是您需要的？"
+"run_skill":"您需要以下哪方面内容：跑姿，跑步热身拉伸，正确跑姿，耐力提升，速度提升？"
+"run_stretch":"您需要跑前热身，还是跑后拉伸？"
+"run_improve_speed":"通过练习下肢和核心的动作增加肌肉力量，增加身体柔韧性，加快步频及跑前热身的方式可以有效提高跑步速度。"
+"run_correct_pose":"身体正直、向前、放松，小步快频，保持头部和躯干的稳定性。"
+"run_correct_time":"一天中最适宜的跑步时间是下午三四点钟，其次是早上和晚上。在睡前两小时跑步则会让睡眠变得更好，但如果太晚的话，则会导致交感神经兴奋而让睡眠质量变>差。"
+"correct_run_breath":"低强度、轻松跑：3:3（三步吸气，三步呼气）；中强度跑：2:2（两步吸气，两步呼气）；极限、高强度跑：1:1（一步吸气，一步呼气；即竞赛时最后冲刺的阶段）"
+"run_improve_endurance":"用间隔训练增强跑步的耐力，需要把慢跑和快跑间隔交替进行，快慢跑的时间间隔尽量随机。"
+"run_effect":"跑步是一项有氧运动，能给促进血液循环，加快新陈代谢，提升肺活量，从而提升免疫力，减肥塑身，提高睡眠质量，慢跑还能消除紧张，提高身体素质，保持年>轻哦"
+ "run_effect":"跑步是一项有氧运动，能给促进血液循环，加快新陈代谢，提升肺活量，从而提升免疫力，减肥塑身，提高睡眠质量，慢跑还能消除紧张，提高身体素质，保持年>轻哦"
+"run_menstruation":"性在生理期间因受黄体素及雌激素分泌影响，常会出现头晕、头痛、腹痛、情绪焦躁等，且这个时候抵抗力也很低，跑步带来体温的升高在跑后也很容易着凉。如>果在家待不住的话，建议你选择最平和的运动方式，比如走路。"
+ "run_cramp":"立即停止跑步，将抽筋部位的肌肉向相反方向拉伸，从而缓解疼痛；用手指按压痉挛的肌肉10-15秒，反复多次，帮助肌肉放松；重新跑步时时需暂时减速，避免肌肉再次承受过大压力。"
+"run_muscle_leg":"一般不会，但不正确的跑步姿势及跑后不进行拉伸会导致肌肉腿。"
+
+
+
+
+
+

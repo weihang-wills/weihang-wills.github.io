@@ -1,81 +1,109 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <title>我的网站</title>
-    <style>
-        .button1 {
-            font-size: 22px;
-            color: #1f4c71;
-            font-family: FZLanTingHei-DB-GBK;
-            text-align: center;
-            border: 4px dashed #8AC007;
-            border-radius: 20px;
-            background-color: antiquewhite;
-            padding: 20px;
-            margin-top: 30px;
-            margin-right: 20px;
+  <meta charset="utf-8" />
+  <title>我的网站</title>
+  <style>
+    .button1 {
+      font-size: 18px;
+      color: #1f4c71;
+      font-family: FZLanTingHei-DB-GBK;
+      text-align: center;
+      border: 4px dashed #8AC007;
+      border-radius: 20px;
+      background-color: antiquewhite;
+      padding: 20px;
+      margin: 20px 20px 0px 0px;
 
-        }
-        .button1:hover{
-            background-color:coral;
-        }
 
-    </style>
+    }
+
+    .button1:hover {
+      background-color: coral;
+    }
+    .title{
+      margin-top: 40px;
+      margin-bottom: 10px;
+      font-size: 22px;
+      font-family: FZLanTingHei-DB-GBK;
+      font-weight: bolder;
+    }
+  </style>
 
 </head>
+
 <body>
 
-    <div style="text-align:center">
-        <h1 style="margin-top:60px;margin-bottom:40px;font-family:FZLanTingHei-DB-GBK;color:#2c6f7e">伟航的项目</h1>
+  <div style="text-align:center">
+    <h1 style="margin-top:60px;margin-bottom:40px;font-family:FZLanTingHei-DB-GBK;color:#2c6f7e">伟航的项目</h1>
 
 
-        <div>
-            <button class="button1" onclick="jump('web1/index.html')">红包对联</button>
-            <button class="button1" onclick="jump('web2/index.html')">游戏剧情</button>
-        </div>
+    <div>
 
+      <div class='title'>平安产险计算机视觉中心</div>
 
-        <button class="button1" onclick="jump('virtuallover/index.html')">虚拟恋人</button>
-        <button class="button1" onclick="jump('virtuallover-wx/index.html')">虚拟恋人公众号</button>
-        <br>
+      <button class="button1" onclick="jump('olds/1.png')">居家养老项目</button>
+      <br>
+      <div class='title'>悦动圈AI</div>
+      <button class="button1" onclick="jump('health_plan.pdf')">科学运动计划文档</button>
+      <button class="button1" onclick="jump('health_plan/index.html')">科学运动计划原型</button>
+      <button class="button1" onclick="jump('talk.pdf')">AI语音机器人</button>
+      <button class="button1" onclick="jump('intend.txt')">对话意图配置</button>
 
-        <button id="11" class="button1" onmouseover="this.innerHTML='点我'" onmouseout="this.innerHTML='哄睡闹钟'">哄睡闹钟</button>
-
-        <button class="button1" onclick="jump('heart/index.html')">心流</button>
-
-        <button class="button1" onclick="jump('https://free.modao.cc/app/iwScQIiPHjaMN44zKRpbSnQLjFPGRzn')">淘客（分销电商）</button>
-          <br>
-            <button class="button1" onclick="jump('https://free.modao.cc/app/g7zwYy98NpX0FAuhoqBHAR2UVQSWu3C')">父母帮相亲卡</button>
-            <button class="button1" onclick="jump('marriage/index.html')">婚恋小程序</button>
-            <br>
-              <button class="button1" onclick="jump('olds/1.png')">居家养老项目</button>
     </div>
+    <div class='title'>耐飞影视</div>
+    <button class="button1" onclick="jump('用户旅途.png')">影视用户旅途</button>
+    <button class="button1" onclick="jump('耐飞影视产品初期分析-庞伟航.pptx')">竞对分析</button>
+    <button class="button1" onclick="jump('耐飞策略报告.pdf')">产品策略报告</button>
+    <button class="button1" onclick="jump('耐飞机器人初稿.pdf')">对话机器人</button>
+    <div class='title'>小鹿情感</div>
+    <button class="button1" onclick="jump('virtuallover/index.html')">虚拟恋人</button>
+    <button class="button1" onclick="jump('marriage/index.html')">婚恋小程序</button>
+    <button class="button1" onclick="jump('virtuallover-wx/index.html')">恋人公众号</button>
+    <br>
+    <div class='title'>自创项目</div>
+
+    <button id="11" class="button1" onmouseover="this.innerHTML='点我'" onmouseout="this.innerHTML='哄睡闹钟'">哄睡闹钟</button>
+
+    <button class="button1" onclick="jump('heart/index.html')">心流</button>
+
+    <button class="button1" onclick="jump('https://free.modao.cc/app/iwScQIiPHjaMN44zKRpbSnQLjFPGRzn')">淘客（分销电商）</button>
+    <br>
+    <button class="button1" onclick="jump('https://free.modao.cc/app/g7zwYy98NpX0FAuhoqBHAR2UVQSWu3C')">父母帮相亲卡</button>
+    <button class="button1" onclick="jump('web1/index.html')">红包对联</button>
+    <br>
+
+    <button class="button1" onclick="jump('web2/index.html')">游戏剧情</button>
+  </div>
 
 
 
 
-    <script language="javascript">
+  <script language="javascript">
+    document.getElementById("11").onclick = function() {
+      jump('clock/index.html')
+    };
 
+    function jump1() {
+      window.open('web1/index.html');
 
-        document.getElementById("11").onclick = function () { jump('clock/index.html') };
+    }
 
-        function jump1() {
-            window.open('web1/index.html');
+    function jump2() {
+      window.location.href = "web2/index.html";
 
-        }
-        function jump2() {
-            window.location.href = "web2/index.html";
+    }
 
-        }
-        function jump3() {
-            window.open('virtuallover/index.html');
-        }
-        function jump(vr) {
-            window.open(vr);
-        }
+    function jump3() {
+      window.open('virtuallover/index.html');
+    }
 
-    </script>
+    function jump(vr) {
+      window.open(vr);
+    }
+  </script>
 
 </body>
 
